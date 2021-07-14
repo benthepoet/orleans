@@ -14,7 +14,7 @@ namespace Orleans.Reminders.DynamoDB
     /// <summary>
     /// Implementation for IReminderTable using DynamoDB as underlying storage.
     /// </summary>
-    internal class DynamoDBReminderTable : IReminderTable
+    public class DynamoDBReminderTable : IReminderTable
     {
         private const string GRAIN_REFERENCE_PROPERTY_NAME = "GrainReference";
         private const string REMINDER_NAME_PROPERTY_NAME = "ReminderName";
